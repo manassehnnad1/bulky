@@ -48,7 +48,7 @@ const App = () => {
           Leaderboard
         </button>
       </div>
-    
+        
       {isToggled === 'Leaderboard' && <Leaderboard traders={traders} />}
     </div>
   )

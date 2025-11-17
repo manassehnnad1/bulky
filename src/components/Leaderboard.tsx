@@ -5,7 +5,10 @@ type Trader = {
 
 const Leaderboard = ({traders}: {traders: Trader[]}) => {
   return (
-    <div className="w-full flex justify-center p-8 bg-[#fffeef] mt-20">
+    <div className="w-full flex flex-col justify-center items-center p-8 bg-[#fffeef] mt-20">
+        <div className="flex justify-center text-center mb-20">
+          <p className="text-xl">The Leaderboard ranking is based on traders' 24-hour PnL. <br />Not ranked yet, <span className="font-bold">Join the</span> <a href="#"><span className="underline font-bold">testnet</span></a></p>
+        </div>
       
       {/* Empty state */}
       {traders.length === 0 && (
